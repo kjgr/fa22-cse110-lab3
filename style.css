@@ -1,0 +1,117 @@
+ /*Changing the background color*/
+ body {
+    background-color: lightblue;
+    text-align: center;
+ }
+ *{
+    font-family: "Fuzzy Bubbles";
+ }
+ /*Changing bold text color*/
+ b{
+    color: rgb(255,0,0);
+    text-decoration: underline;
+}
+p[target]{
+    color: burlywood;
+}
+
+details{
+    text-decoration: underline;
+    font-size: 5ex;
+}
+
+details:active{
+    background-color: aquamarine;
+}
+
+input{
+    width: 20em;
+    height: 0.25in;
+    display: inline;
+}
+
+input:hover{
+    background-color: aquamarine;
+    width: 25em;
+    height: 0.50in;
+}
+
+li {
+    color: hsl(120,100%,25%,1);
+    list-style-position: inside;
+    margin: 10px;
+    text-align: center;
+    display: inline;
+}
+
+button {
+    margin-top: 2px;
+    padding: 0.5vw;
+    border-style: ridge;
+    border-color: green;
+    border-width: 0.5cmcm;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.intro {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255);
+    padding: 20px;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.grid-container{
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (width: 100px) {
+    #impinf {
+      background-color: aquamarine;
+    }
+  }
+  
+  /* Minimum width */
+  @media (min-width: 35rem) {
+    #impinf {
+      background: aquamarine;
+    }
+  }
+  
+  /* Maximum width */
+  @media (max-width: 50rem) {
+    #impinf {
+      border: 2px solid blue;
+      background: red;
+    }
+  }
+
+  h2,h3,h4,h5{
+    color: #A020F0;
+  }
+
+  .grid-container p{
+    color: crimson;
+  }
+
+  ul > li{
+    font-size: 30px;
+  }
+
+  ul + div{
+    background-color: white;
+  }
